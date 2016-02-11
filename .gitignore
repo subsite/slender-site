@@ -1,0 +1,14 @@
+*.orig
+*.bak
+*.log
+*~
+# npm projects
+/node_modules
+/bower_components
+# Visual Studio Code metadata
+/.vscode
+# Railo or Coldfusion metadata
+/WEB-INF
+# For TypeScript projects like Angular2
+/app/**/*.js
+/app/**/*.map
