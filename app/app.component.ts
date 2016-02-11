@@ -1,7 +1,6 @@
 import {Component} from 'angular2/core';
-
-import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
-import {ROUTER_PROVIDERS}  from 'angular2/router';
+import {provide}           from 'angular2/core';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2/router';
 import {HTTP_PROVIDERS}    from 'angular2/http';
 
 import {LoaderComponent}   from './loader/loader.component';
@@ -13,7 +12,8 @@ import {NaviComponent}   from './navi/navi.component';
     directives: [ROUTER_DIRECTIVES],
     providers: [
         ROUTER_PROVIDERS,
-        HTTP_PROVIDERS
+        HTTP_PROVIDERS,
+        provide(LocationStrategy, {useClass: HashLocationStrategy}) // reload page doesn't work without hash... bug?
     ]
 })
 
@@ -24,6 +24,6 @@ import {NaviComponent}   from './navi/navi.component';
 
 export class AppComponent {
 
-    constructor(private router: Router) { }
+    constructor() { }
 
 }

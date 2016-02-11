@@ -1,4 +1,4 @@
-##Free Projects
+## Free Projects
 
 Here's some projects that I've done in my free time. Feel free to use!
 
@@ -11,7 +11,7 @@ https://github.com/subsite/snapshotbackup
 
  
 
-##Misc Scripts
+## Misc Scripts
 
 I, as most other Linux admins, tend to write small scripts for miscellaneous tasks. I now maintain some of them on GitHub to be able to conveniently run the same version on different hosts. Feel free to download or fork these if you find them useful.
 
@@ -20,7 +20,7 @@ https://github.com/subsite/misc-scripts
 
  
 
-##Git Cheatsheet
+## Git Cheatsheet
 
 Yet another Git cheatsheet. Hosted on Bitbucket.
 
@@ -28,7 +28,7 @@ https://bitbucket.org/subsite/git-cheatsheet
 
  
 
-##VirtualBass
+## VirtualBass
 
 A virtual electric bass application try it out!
 

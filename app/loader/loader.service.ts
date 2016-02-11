@@ -10,7 +10,7 @@ export class LoaderService {
 
     getJson(httpUrl:string) {
         return this.http.get(httpUrl)
-            .map(res => res.json().data) // Response as json
+            .map(res => res.json().data) // Response as json. For future use.
             .catch(this.handleError);
     }
     getRaw(httpUrl:string) {
@@ -20,7 +20,9 @@ export class LoaderService {
     }
 
     markUp(md:string) {
+        console.log(marked(md));
         return (marked(md));
+        
     }
 
     private handleError(error: Response) {

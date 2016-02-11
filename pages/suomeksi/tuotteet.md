@@ -1,4 +1,4 @@
-##Tuotteemme
+## Tuotteemme
 
 Ratkaisumme ovat aina räätälöityjä asiakkaan tarpeiden mukaan.
 
@@ -10,7 +10,7 @@ Synkronointi ja sisäänluku: SQL ⇔ CSV
 Nettisivujen monijulkaisu, esim. CMS ⇒ Facebook Pages
 Mobiiliratkaisut
 
-##Palvelumme
+## Palvelumme
 
 Tietokantasuunnittelua ja -optimointina (SQL-pohjaiset alustat)
 Dynaamisten nettikokonaisuuksien suunnittelua (esim LAMP-järjestelmät)
@@ -20,7 +20,7 @@ Linux-palvelinympäristöjen suunnittelua ja toteuttamista
 Verkkolasku ja EDI
 Käännöstyöt, suomi-ruotsi ja englanti-ruotsi
 
-##KnowHow
+## KnowHow
 
 HTML, CSS, JavaScript
 ColdFusion, PHP, Perl

@@ -1,9 +1,9 @@
-##SubSite
+## SubSite
 
 Founded in 2009, IT Consultant Company SubSite specialises in dynamic web solutions and system integration. Our goal is to provide solutions where all data is optimised, dynamic and consistent.
  
 
-##Streamlining data management
+## Streamlining data management
 
 Today's organisations depend on powerful information systems. Product information, client data and business economics is stored in databases, and managing this mass of data requires considerable effort and resources.
 

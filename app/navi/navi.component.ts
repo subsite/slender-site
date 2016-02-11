@@ -46,7 +46,7 @@ export class NaviComponent {
 
         console.log({ page1: this.page1, page2: this.page2 });
         
-        doNav();
+        this.doNav();
     }
 
     doNav() {
@@ -54,3 +54,4 @@ export class NaviComponent {
     }
 
 }
+

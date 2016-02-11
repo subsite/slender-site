@@ -1,9 +1,9 @@
-##subSite
+## subSite
 
 Vuonna 2009 perustettu IT-alan asiantuntijatoimisto SubSite suunnittelee ja toteuttaa integroituja tietokanta- ja verkkosivuratkaisuja. Tavoitteemme on luoda järjestelmiä, joissa tieto on optimoitua, dynaamista ja johdonmukaista.
  
 
-##Tehostettua tiedonhallintaa
+## Tehostettua tiedonhallintaa
 
 Nykypäivän organisaatiot ovat riippuvaisia tehokkaista tietojärjestelmistä. Tuote-, asiakas- ja taloudelliset tiedot tallennetaan tietokantoihin. Merkittävä osa organisaation resursseista käytetään tietomassan hallintaan.
 
