@@ -1,0 +1,21 @@
+<div id="header">
+    <div id="lang_menu">
+
+        <div *ngFor="#item of navi1" (click)="onNav(1, item.page)">
+            {{item.page}} {{item.name}}
+        </div>
+
+    </div>
+    <div id="logo"></div>
+</div>
+<div id="menu_outer">
+    <div id="menu_container">
+        <div id="topmenu">
+            <div *ngFor="#item of navi2" (click)="onNav(2, item.page)">
+                {{item.page}} {{item.name}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

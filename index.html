@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SubSite</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <meta name="Description" content="" />
+    <meta name="KEYWORDS" content="" />
+    <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon" />
+    <meta name="verify-v1" content="vBKfvtkxn4qJkDcpbo2zVpwp4HGd4Dl/gVOUsbh2eq8=" />
+    <link rel="icon" href="assets/img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/marked/marked.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+    System.config({
+        packages: {        
+            app: {
+            format: 'register',
+            defaultExtension: 'js'
+            }
+        }
+        });
+        System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+    <base href="/"><!-- Router base -->
+</head>
+
+
+
+<body>
+    <ss-app></ss-app>
+</body>
+
+</html>

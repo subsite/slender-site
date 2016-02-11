@@ -1,0 +1,2 @@
+# Markdown directive
+  *It works!*  
