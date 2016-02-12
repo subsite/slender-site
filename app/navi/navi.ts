@@ -45,7 +45,7 @@ export var NAVI: Navi[] = [
             },
             {
                 "page": "products",
-                "name": "Tuotteet"
+                "name": "Products"
             },
             {
                 "page": "references",

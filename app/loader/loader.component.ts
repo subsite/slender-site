@@ -1,7 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteParams, Router} from 'angular2/router';
 import {LoaderService}  from './loader.service';
-import {NAVI}   from '../navi/navi';
 
 @Component({
     templateUrl: './app/loader/loader.html',

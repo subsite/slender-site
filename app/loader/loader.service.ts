@@ -20,7 +20,7 @@ export class LoaderService {
     }
 
     markUp(md:string) {
-        console.log(marked(md));
+        //console.log(marked(md));
         return (marked(md));
         
     }
