@@ -2,7 +2,9 @@
     <div id="lang_menu">
 
         <div *ngFor="#item of navi; #i = index" (click)="onNavi(0, i)">
+
             <a>{{item.name}}</a>
+
         </div>
 
     </div>
@@ -12,7 +14,9 @@
     <div id="menu_container">
         <div id="topmenu">
             <span *ngFor="#item of subNavi; #i = index" (click)="onNavi(1, i)">
+
                     <a>{{item.name}}</a>
+
                 </span>
         </div>
     </div>
@@ -21,8 +25,10 @@
 
 
 <div id="main_outer">
+
     
     {{curNaviIdx[0]}} {{curNaviIdx[1]}}
+
     <div id="main_container">
         <div id="content">
             <router-outlet></router-outlet>

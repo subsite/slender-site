@@ -30,7 +30,7 @@ export class AppComponent {
     private navi: Navi[];
     private subNavi: any;
     private curNaviIdx: number[] = [0,0];
-    
+
     ngOnInit() {
         this.navi = this.naviService.getMainNavi();
         this.subNavi = this.naviService.getSubNavi();
@@ -40,6 +40,7 @@ export class AppComponent {
         this.naviService.onNavi(level, idx);
         this.subNavi = this.naviService.getSubNavi();
         this.curNaviIdx[level] = idx;
+
     }
 
 }
