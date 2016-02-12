@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import {RouteParams, Router, ROUTER_DIRECTIVES} from 'angular2/router';
 import {Navi, NAVI}   from './navi';
 
-@Component({
+/*@Component({
     templateUrl: './app/navi/navi.html',
     selector: 'ss-navi',
     directives: [ROUTER_DIRECTIVES]
@@ -20,12 +20,11 @@ export class NaviComponent {
     page2: string;
 
     ngOnInit() {
+        console.log("navi INIT");
         this.navi1 = NAVI;
         this.navi2 = this.navi1[0].sub;
-        
         this.page1 = this.navi1[0].page;
         this.page2 = this.navi2[0].page;
-        console.log("navi INIT");
         this.doNav();
 
     }
@@ -34,7 +33,7 @@ export class NaviComponent {
 
         if (level == 1) {
             this.page1 = page;
-            /* check for navi1 change */
+       
             for (var key in this.navi1) {
                 if (this.navi1[key].page == this.page1) {
                     this.navi2 = this.navi1[key].sub;
@@ -53,5 +52,5 @@ export class NaviComponent {
         this.router.navigate(['Loader', { page1: this.page1, page2: this.page2 }]);
     }
 
-}
+}*/
 

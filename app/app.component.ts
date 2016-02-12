@@ -4,13 +4,15 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, LocationStrategy, Hash
 import {HTTP_PROVIDERS}    from 'angular2/http';
 
 import {LoaderComponent}   from './loader/loader.component';
-import {NaviComponent}   from './navi/navi.component';
+import {NaviService}   from './navi/navi.service';
+import {Navi}   from './navi/navi';
 
 @Component({
     selector: 'ss-app',
     templateUrl: './app/app.html',
     directives: [ROUTER_DIRECTIVES],
     providers: [
+        NaviService,
         ROUTER_PROVIDERS,
         HTTP_PROVIDERS,
         provide(LocationStrategy, {useClass: HashLocationStrategy}) // reload page doesn't work without hash... bug?
@@ -18,12 +20,24 @@ import {NaviComponent}   from './navi/navi.component';
 })
 
 @RouteConfig([
-    { path: '/', name: 'Navi', component: NaviComponent },
     { path: '/:page1/:page2', name: 'Loader', component: LoaderComponent }
 ])
 
 export class AppComponent {
 
-    constructor() { }
+    constructor(private naviService: NaviService) { }
+    
+    private navi: Navi[];
+    private subNavi: any;
+    
+    ngOnInit() {
+        this.navi = this.naviService.getMainNavi();
+        this.subNavi = this.naviService.getSubNavi();
+        this.onNavi(0,0);
+    }
+    onNavi(level:number, idx:number) {
+        this.naviService.onNavi(level, idx);
+        this.subNavi = this.naviService.getSubNavi();
+    }
 
 }

@@ -1,6 +1,29 @@
+<div id="header">
+    <div id="lang_menu">
 
-<ss-navi></ss-navi>
-<router-outlet></router-outlet>
+        <div *ngFor="#item of navi; #i = index" (click)="onNavi(0, i)">
+            {{item.name}}
+        </div>
+
+    </div>
+    <div id="logo"></div>
+</div>
+<div id="menu_outer">
+    <div id="menu_container">
+        <div id="topmenu">
+            <span *ngFor="#item of subNavi; #i = index" (click)="onNavi(1, i)">
+                    {{item.name}}
+                </span>
+        </div>
+    </div>
+</div>
 
 
 
+<div id="main_outer">
+    <div id="main_container">
+        <div id="content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
