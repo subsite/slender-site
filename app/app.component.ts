@@ -27,20 +27,16 @@ export class AppComponent {
 
     constructor(private naviService: NaviService) { }
     
-    private navi: Navi[];
-    private subNavi: any;
+    private navi: any;
     private curNaviIdx: number[] = [0,0];
 
     ngOnInit() {
-        this.navi = this.naviService.getMainNavi();
-        this.subNavi = this.naviService.getSubNavi();
+        this.navi = this.naviService.navi;
         this.onNavi(0,0);
     }
     onNavi(level:number, idx:number) {
         this.naviService.onNavi(level, idx);
-        this.subNavi = this.naviService.getSubNavi();
-        this.curNaviIdx[level] = idx;
-
+        this.curNaviIdx = this.naviService.curNaviIdx;
     }
 
 }

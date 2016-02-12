@@ -13,7 +13,7 @@
 <div id="menu_outer">
     <div id="menu_container">
         <div id="topmenu">
-            <span *ngFor="#item of subNavi; #i = index" (click)="onNavi(1, i)">
+            <span *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" (click)="onNavi(1, i)">
 
                     <a>{{item.name}}</a>
 

@@ -1,8 +1,8 @@
-import {Component} from 'angular2/core';
+/*import {Component} from 'angular2/core';
 import {RouteParams, Router, ROUTER_DIRECTIVES} from 'angular2/router';
 import {Navi, NAVI}   from './navi';
 
-/*@Component({
+@Component({
     templateUrl: './app/navi/navi.html',
     selector: 'ss-navi',
     directives: [ROUTER_DIRECTIVES]
