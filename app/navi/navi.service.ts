@@ -1,28 +1,21 @@
 import {Injectable} from 'angular2/core';
-import {Router} from 'angular2/router';
-import {Navi, NAVI}   from './navi';
+import {CONF} from '../conf';
 
 @Injectable()
 export class NaviService {
-
-    constructor(private router: Router) {
-        this.navi = NAVI;
-        
-    }
-
+    
     navi: any = [];
+    // Default navi index first child of first parent
     curNaviIdx: number[] = [0,0];
+    
+    constructor() {
+        // Get navi from conf
+        this.navi = CONF.navi;
+    }
 
     onNavi(navLevel: number, navIdx: number) {
+        // Set current navigation index 
+        // curNaviIdx[0] = first level array index, curNaviIdx[1] = second level.
         this.curNaviIdx[navLevel] = navIdx;
-        this.doNavi();
-    }
-
-    doNavi() {
-
-        this.router.navigate(['Loader', {
-            page1: this.navi[this.curNaviIdx[0]].page, 
-            page2: this.navi[this.curNaviIdx[0]].sub[this.curNaviIdx[1]].page
-        }]);
     }
 }

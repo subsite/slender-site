@@ -122,10 +122,13 @@ code {
 #content {
     margin-right: 10%;
     padding-top: 10px;
+    min-height: 500px;
+
 }
 
 #content div, #content span, #content li, #content p, #content td {
 	white-space: pre-wrap;
+
 }
 
 #topmenu {
@@ -188,4 +191,11 @@ code {
 	width: 60%;
 	padding-left: 15px;
 	min-width: 200px;
+}
+
+ss-loader>div {
+    opacity: 0.5;
+}
+ss-loader>div.loaded {
+    opacity: 1;
 }
