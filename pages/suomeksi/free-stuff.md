@@ -2,14 +2,13 @@
 
 Here's some projects that I've done in my free time. Feel free to use!
 
-SnapshotBackup
+## SnapshotBackup
 
 An incremental backup script for creating time freezed snapshots. Works on Linux-like systems only, tested on Ubuntu and Debian. Written in bash, uses rsync and some standard shell commands.
 
 Download latest version from GitHub: 
 https://github.com/subsite/snapshotbackup
 
- 
 
 ## Misc Scripts
 
@@ -19,17 +18,14 @@ Download latest version from GitHub:
 https://github.com/subsite/misc-scripts
 
  
-
 ## Git Cheatsheet
 
 Yet another Git cheatsheet. Hosted on Bitbucket.
-
 https://bitbucket.org/subsite/git-cheatsheet
 
  
-
 ## VirtualBass
 
 A virtual electric bass application try it out!
 
-Based on the new audio features of HTML5. Built mainly with PHP and jQuery. Licence: Free to use.
+Based on the audio features of HTML5. Built mainly with PHP and jQuery. Licence: Free to use.
