@@ -3,7 +3,7 @@
 Ratkaisumme ovat aina räätälöityjä asiakkaan tarpeiden mukaan.
 
 - Integroituja verkkoratkaisuja ja CMS
- -Automatisoitu sähköinen kauppa (asiakaskohtaisia hintoja, varastotiedot, tilausjärjestelmä, raportointi. Synkronoitu ERP-järjestelmän kanssa.)
+- Automatisoitu sähköinen kauppa (asiakaskohtaisia hintoja, varastotiedot, tilausjärjestelmä, raportointi. Synkronoitu ERP-järjestelmän kanssa.)
 - Verkkopohjaista raportointia reaaliajassa, esim. avainlukuja, myyjäkohtainen seuranta
 - Dynaaminen PDF-generointi
 - Synkronointi ja sisäänluku: SQL ⇔ CSV
