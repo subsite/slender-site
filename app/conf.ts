@@ -4,55 +4,30 @@ export var CONF: any = {
     
     navi: [             // Navigation tree
         {
-            page: "suomeksi", // First = default
-            name: "Suomeksi",
+            page: "foobar", // First = default
+            name: "Foobar",
             sub: [
                 {
-                    page: "subsite", // First = default
-                    name: "SubSite"
+                    page: "foo", // First = default
+                    name: "Foo"
                 },
                 {
-                    page: "tuotteet",
-                    name: "Tuotteet"
-                },
-                {
-                    page: "referensseja",
-                    name: "Referenssejä"
-                },
-                {
-                    page: "yhteys",
-                    name: "Yhteys"
-                },
-                {
-                    page: "free-stuff",
-                    name: "Free Projects"
+                    page: "bar",
+                    name: "Bar"
                 }
-
             ]
         },
         {
-            page: "in-english",
-            name: "In English",
+            page: "lipsum",
+            name: "Lipsum",
             sub: [
                 {
-                    page: "subsite",
-                    name: "SubSite"
+                    page: "lorem",
+                    name: "Lorem"
                 },
                 {
-                    page: "products",
-                    name: "Products"
-                },
-                {
-                    page: "references",
-                    name: "References"
-                },
-                {
-                    page: "contact",
-                    name: "Contact"
-                },
-                {
-                    page: "free-stuff",
-                    name: "Free Projects"
+                    page: "ipsum",
+                    name: "Ipsum"
                 }
             ]
         }

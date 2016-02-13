@@ -1,31 +1,19 @@
 <div id="header">
-    <div id="lang_menu">
-
-        <span *ngFor="#item of navi; #i = index" (click)="onNavi(0, i)">
-            <span *ngIf="i > 0">|</span><a>{{item.name}}</a>
-        </span>
+    <div id="banner">SlimSite demo</div>
+    <div id="navi1">
+        <div *ngFor="#item of navi; #i = index" (click)="onNavi(0, i)">
+            {{item.name}}
+        </div>
 
     </div>
-    <div id="logo"></div>
 </div>
-<div id="menu_outer">
-    <div id="menu_container">
-        <div id="topmenu">
-            <span *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" (click)="onNavi(1, i)">
-
-                    <a>{{item.name}}</a>
-
-                </span>
+<div id="content">
+    <div id="navi2">
+        <div *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" (click)="onNavi(1, i)">
+            {{item.name}}
         </div>
     </div>
-</div>
-
-
-
-<div id="main_outer">
-    <div id="main_container">
-        <div id="content" class="{{transitionClass}}">
-            <router-outlet></router-outlet>
-        </div>
+    <div id="page">
+        <router-outlet></router-outlet>
     </div>
 </div>
