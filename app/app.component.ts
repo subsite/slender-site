@@ -45,6 +45,7 @@ export class AppComponent {
     
     // Run when user clicks navi link
     onNavi(level:number, idx:number) {
+        console.log("onNavi: level-"+level+" index-"+idx);
         // Run navi service tasks
         this.naviService.onNavi(level, idx);
         // Get current navi index

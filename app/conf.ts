@@ -19,7 +19,8 @@ export var CONF: any = {
             sub: [
                 {
                     page: "foo", 
-                    name: "Foo"
+                    name: "Foo",
+                    custom_url: "/pages/about/about.md"
                 },
                 {
                     page: "bar",
