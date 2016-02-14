@@ -38,14 +38,26 @@ export class AppComponent {
            private router: Router) { }
 
     ngOnInit() {
+         console.log("AppComponent.INIT");
+
+
         // Get navi menu from service
         this.navi = this.naviService.navi;
-        this.onNavi(0,0);
+        
+        // I case subpage path is requested directly
+        var path = window.location.hash.split('/');
+        // Find navi array index by page name
+        var nav1 = (path[1]) ? this.navi.map(function(e) { return e.page; }).indexOf(path[1]) : 0;
+        var nav2 = (path[2]) ? this.navi[nav1].sub.map(function(e) { return e.page; }).indexOf(path[2]) : 0;
+
+        // Run initial navi based on possible hashpath
+        this.onNavi(0,nav1);
+        this.onNavi(1,nav2);
     }
     
     // Run when user clicks navi link
     onNavi(level:number, idx:number) {
-        console.log("onNavi: level-"+level+" index-"+idx);
+        console.log("AppComponent.onNavi: level-"+level+" index-"+idx);
         // Run navi service tasks
         this.naviService.onNavi(level, idx);
         // Get current navi index

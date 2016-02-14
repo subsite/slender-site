@@ -1,6 +1,6 @@
 export var CONF: any = {
     
-    pageroot: '/pages', // Root url for markdown pages
+    pageroot: '/content/pages', // Root url for markdown pages
     
     navi: [             // Navigation tree
         {
@@ -9,7 +9,8 @@ export var CONF: any = {
             sub: [
                 {
                     page: "about", // First = default page
-                    name: "About"
+                    name: "About",
+                    custom_url: "/readme.md" // Overriding url (full url with extension)
                 }
             ]
         },
@@ -20,7 +21,7 @@ export var CONF: any = {
                 {
                     page: "foo", 
                     name: "Foo",
-                    custom_url: "/pages/about/about.md"
+                    
                 },
                 {
                     page: "bar",
@@ -30,7 +31,7 @@ export var CONF: any = {
         },
         {
             page: "lipsum",
-            name: "Lipsum",
+            name: "Lorem Ipsum",
             sub: [
                 {
                     page: "lorem",

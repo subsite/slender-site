@@ -2,6 +2,7 @@ body {
 	margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
+    color: rgb(50,50,50);
 }
 ss-app>div {
   float: left;
@@ -14,22 +15,23 @@ ss-app>div {
     padding-top: 5vh;
     color: white;
     text-align: center;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
-background: #7d7e7d; /* Old browsers */
-background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: #7d7e7d; /* Old browsers */
+    background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
 #navi1 {
     width: 100%;
-  
-  
+    padding-left: 2vw;
+    border-top: 1px solid white;
+
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3dff5a+0,57c93e+100 */
-background: #3dff5a; /* Old browsers */
-background: -moz-linear-gradient(top, #3dff5a 0%, #57c93e 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #3dff5a 0%,#57c93e 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #3dff5a; /* Old browsers */
+    background: -moz-linear-gradient(top, #3dff5a 0%, #57c93e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3dff5a 0%,#57c93e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
 #navi1>div, #navi2>div {
@@ -50,8 +52,21 @@ background: linear-gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, 
 
 #navi2 {
     width: 20%;
-    border-right: 1px solid rgb(80,80,80);
 }
+#navi2>div {
+    line-height: 1.5em;
+}
+#navi1>div:hover, #navi2>div:hover {
+    color: silver;
+} 
 #page {
      width: 70%;
+     border-left: 1px solid rgb(80,80,80);
+     
+}
+code {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(220,220,220);
+    padding: 5px;
 }

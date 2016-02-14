@@ -11,17 +11,15 @@ export class NaviService {
     constructor() {
         // Get navi from conf
         this.navi = CONF.navi;
-      
     }
 
     onNavi(navLevel: number, navIdx: number) {
-        // Set current navigation index 
         
         // On parent change set sub index to 0
         if (navLevel == 0 && navIdx != this.curNaviIdx[0]) {
             this.curNaviIdx[1] = 0;
         }
-        
+    
         // curNaviIdx[0] = first level array index, curNaviIdx[1] = second level.
         this.curNaviIdx[navLevel] = navIdx;
         console.log("NaviService.onNavi curNaviIdx "+ JSON.stringify(this.curNaviIdx));

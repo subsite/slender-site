@@ -18,22 +18,12 @@ export class LoaderComponent {
         private routeParams: RouteParams,
         private loaderService: LoaderService) { }
     
-    ngOnInit() {
-
-
-        
-
-        // Create url from routeParams
-        
-        //this.mdUrl = CONF.pageroot + '/' + this.routeParams.get('page1') + '/' + this.routeParams.get('page2') + '.md';
-        
+    ngOnInit() {        
+        // Get page url from service       
         this.mdUrl = this.loaderService.getPageUrl();
-         // Get file from service and parse it
+        // Get file from service and parse it
         this.loaderService.getFile(this.mdUrl)
             .subscribe(data => this.parsedMd = this.loaderService.markUp(data));
     }
-    
-
-    
 
 }
