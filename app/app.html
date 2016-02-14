@@ -1,19 +1,18 @@
-<div id="header">
-    <div id="banner">SlimSite demo</div>
-    <div id="navi1">
-        <div *ngFor="#item of navi; #i = index" (click)="onNavi(0, i)">
-            {{item.name}}
-        </div>
 
+<div id="banner">SlimSite demo</div>
+<div id="navi1">
+    <div *ngFor="#item of navi; #i = index" (click)="onNavi(0, i)">
+        {{item.name}}
+    </div>
+
+</div>
+
+<div id="navi2">
+    <div *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" (click)="onNavi(1, i)">
+        {{item.name}}
     </div>
 </div>
-<div id="content">
-    <div id="navi2">
-        <div *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" (click)="onNavi(1, i)">
-            {{item.name}}
-        </div>
-    </div>
-    <div id="page">
-        <router-outlet></router-outlet>
-    </div>
+<div id="page">
+    <router-outlet></router-outlet>
 </div>
+

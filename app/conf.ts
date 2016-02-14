@@ -4,11 +4,21 @@ export var CONF: any = {
     
     navi: [             // Navigation tree
         {
-            page: "foobar", // First = default
+            page: "about", // First = default folder
+            name: "About",
+            sub: [
+                {
+                    page: "about", // First = default page
+                    name: "About"
+                }
+            ]
+        },
+        {
+            page: "foobar", 
             name: "Foobar",
             sub: [
                 {
-                    page: "foo", // First = default
+                    page: "foo", 
                     name: "Foo"
                 },
                 {
