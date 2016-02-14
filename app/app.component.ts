@@ -40,7 +40,7 @@ export class AppComponent {
     ngOnInit() {
         // Get navi menu from service
         this.navi = this.naviService.navi;
-        this.onNavi(0,0);
+        //this.onNavi(0,0);
     }
     
     // Run when user clicks navi link
