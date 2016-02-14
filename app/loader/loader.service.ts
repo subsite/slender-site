@@ -27,6 +27,8 @@ export class LoaderService {
             console.log("custom_url: "+sub.custom_url);
         }
         
+        console.log("index:"+this.navi[this.naviService.curNaviIdx[0]].sub.map(function(e) { return e.page; }).indexOf(this.routeParams.get('page2')));
+        
          return CONF.pageroot + '/' + this.routeParams.get('page1') + '/' + this.routeParams.get('page2') + '.md';
 
     }

@@ -1,5 +1,4 @@
 import {Injectable} from 'angular2/core';
-import {RouteParams, Router} from 'angular2/router';
 import {CONF} from '../conf';
 
 @Injectable()
@@ -9,7 +8,7 @@ export class NaviService {
     // Default navi index first child of first parent
     curNaviIdx: number[] = [0,0];
     
-    constructor(private routeParams: RouteParams) {
+    constructor() {
         // Get navi from conf
         this.navi = CONF.navi;
       

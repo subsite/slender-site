@@ -17,8 +17,8 @@ import {NaviService} from './navi/navi.service';
     directives: [ROUTER_DIRECTIVES],
     providers: [
         NaviService,
-        ROUTER_PROVIDERS,
         HTTP_PROVIDERS,
+        ROUTER_PROVIDERS,
         provide(LocationStrategy, {useClass: HashLocationStrategy}) 
             // Use hash for now, direct access produces 404 with non-hashbang paths
     ]
@@ -40,7 +40,7 @@ export class AppComponent {
     ngOnInit() {
         // Get navi menu from service
         this.navi = this.naviService.navi;
-        //this.onNavi(0,0);
+        this.onNavi(0,0);
     }
     
     // Run when user clicks navi link
