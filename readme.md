@@ -1,6 +1,8 @@
+# SlenderSite by SubSite
+
 ## About
 
-This is a simple Angular2 website framework for no-nonsense sites with nothing but content.
+SlenderSite is a simple Angular2 website system for no-nonsense sites with nothing but content.
 
 **Features**
 - Very short source code

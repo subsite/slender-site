@@ -14,7 +14,6 @@ export class NaviService {
     }
 
     onNavi(navLevel: number, navIdx: number) {
-        
         // On parent change set sub index to 0
         if (navLevel == 0 && navIdx != this.curNaviIdx[0]) {
             this.curNaviIdx[1] = 0;
@@ -22,6 +21,5 @@ export class NaviService {
     
         // curNaviIdx[0] = first level array index, curNaviIdx[1] = second level.
         this.curNaviIdx[navLevel] = navIdx;
-        console.log("NaviService.onNavi curNaviIdx "+ JSON.stringify(this.curNaviIdx));
     }
 }

@@ -38,9 +38,6 @@ export class AppComponent {
            private router: Router) { }
 
     ngOnInit() {
-         console.log("AppComponent.INIT");
-
-
         // Get navi menu from service
         this.navi = this.naviService.navi;
         
@@ -57,7 +54,6 @@ export class AppComponent {
     
     // Run when user clicks navi link
     onNavi(level:number, idx:number) {
-        console.log("AppComponent.onNavi: level-"+level+" index-"+idx);
         // Run navi service tasks
         this.naviService.onNavi(level, idx);
         // Get current navi index
