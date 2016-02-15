@@ -4,6 +4,9 @@
 
 SlenderSite is a simple Angular2 website system for no-nonsense sites with nothing but content.
 
+- Demo page: http://www.subsite.fi/slender-site/ 
+- GitHub repository: https://github.com/subsite/slender-site/
+
 **Features**
 - Very short source code
 - Two level navigational hierarchy
