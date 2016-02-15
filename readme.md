@@ -25,7 +25,7 @@ This is really just a testbead for Angular2, but it is currently in production h
 
 ## Found a bug? Want to comment?
 
-Use the issute tracker of this repository to file found bugs, opinions. Feel free to fork and pull-request! Angular2 is still beta, and thus lacking in documentation and prone to change. Some of this code - and coding style - might become obsolete as angular2 developes further. We'll be glad to hear your comments concerning this also!
+Use the issue tracker of this repository to file found bugs, opinions. Feel free to fork and pull-request! Angular2 is still beta, and thus lacking in documentation and prone to change. Some of this code - and coding style - might become obsolete as angular2 developes further. We'll be glad to hear your comments concerning this also!
 
 ## Installation
 
