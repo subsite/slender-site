@@ -2,14 +2,15 @@
 *.bak
 *.log
 *~
-.htaccess
 # npm projects
-/node_modules
-/bower_components
+node_modules
+bower_components
 # Visual Studio Code metadata
-/.vscode
+.vscode
 # Railo or Coldfusion metadata
-/WEB-INF
+WEB-INF
 # For TypeScript projects like Angular2
-/app/**/*.js
-/app/**/*.map
+app/**/*.js
+app/**/*.map
+
+
