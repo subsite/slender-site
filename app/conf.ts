@@ -22,30 +22,16 @@ export var CONF: any = {
         },
         {
             page: "foobar", 
-            name: "Foobar",
+            name: "Example pages",
             sub: [
                 {
                     page: "foo", 
-                    name: "Foo",
+                    name: "Example 1",
                     
                 },
                 {
                     page: "bar",
-                    name: "Bar"
-                }
-            ]
-        },
-        {
-            page: "lipsum",
-            name: "Lorem Ipsum",
-            sub: [
-                {
-                    page: "lorem",
-                    name: "Lorem"
-                },
-                {
-                    page: "ipsum",
-                    name: "Ipsum"
+                    name: "Example 2"
                 }
             ]
         }
