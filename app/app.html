@@ -1,23 +1,26 @@
-
 <div id="banner">SlimSite demo</div>
 <div id="navi1">
     <div *ngFor="#item of navi; #i = index" 
-        (click)="onNavi(0, i)"
+        (click)="onNavi(0, i)" 
         [class.is-active]="i == curNaviIdx[0]">
         {{item.name}}
     </div>
 
 </div>
 
-<div id="navi2">
-    <div  *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" 
-        (click)="onNavi(1, i)"
-        [class.is-active]="i == curNaviIdx[1]">
-        
-        {{item.name}} 
+<div id="main">
+    <div id="navi2">
+        <div *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" 
+            (click)="onNavi(1, i)" 
+            [class.is-active]="i == curNaviIdx[1]">
+
+            {{item.name}}
+        </div>
+    </div>
+    <div id="page">
+        <router-outlet></router-outlet>
     </div>
 </div>
-<div id="page">
-    <router-outlet></router-outlet>
+<div id="footer">
+    <div>&copy; SubSite - Fredrik Welander 2016 <a href="http://www.subsite.fi/#/in-english">http://www.subsite.fi</a></div>
 </div>
-

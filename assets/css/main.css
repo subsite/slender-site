@@ -1,16 +1,52 @@
 body {
 	margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
-    color: rgb(50,50,50);
+    background-color: rgb(50,50,50);
+    color: white;
 }
+#loading {
+    /* Loader from http://www.ajaxload.info/ */
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url("../img/loader.gif") center center no-repeat;
+    
+}
+
+/* Layout alignmment */
 ss-app>div {
   float: left;
 }
-
 #banner {
     width: 100%;
     height: 20vh;
+}
+#navi1{
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+    #navi2 {
+        float: left;
+        width: 20%;
+        height: 100%;
+        
+    }
+    #page {
+        float: right;
+        width: 70%;
+        min-height: 55vh;
+    }
+#footer {
+   width: 90%
+}
+
+/* /Layout alignmment */
+
+/* Element styling */
+#banner {
     font-size: 3em; 
     padding-top: 5vh;
     color: white;
@@ -22,16 +58,15 @@ ss-app>div {
     background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
-#navi1 {
-    width: 100%;
-    padding-left: 2vw;
+#navi1 {   
     border-top: 1px solid white;
-
+    border-bottom: 1px solid rgb(0,150,0);
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3dff5a+0,57c93e+100 */
     background: #3dff5a; /* Old browsers */
     background: -moz-linear-gradient(top, #3dff5a 0%, #57c93e 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #3dff5a 0%,#57c93e 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-
+    gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
 #navi1>div, #navi2>div {
@@ -39,37 +74,53 @@ ss-app>div {
 }
 #navi1>div {
     float: left;
-    padding: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 4vw;
     font-size: 1.2em;
     color: white;
-}
-
-#navi2, #page {
-   min-height: 60vh; 
-   padding-top: 1em;  
-   padding-left: 1em;
-}
-
-#navi2 {
-    width: 20%;
-}
-#navi2>div {
-    line-height: 1.5em;
-}
-#navi1>div:hover, #navi2>div:hover {
-    color: silver;
-} 
-#page {
-     width: 70%;
-     border-left: 1px solid rgb(80,80,80);
-     
 }
 #navi1 .is-active, #navi2 .is-active { /* active navi element */
     font-weight: bold;
 }
+#main {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfe29e+0,ffffff+100 */
+background: #bfe29e; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #bfe29e 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #bfe29e 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #bfe29e 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+    #navi2, #page {
+        color: rgb(50,50,50);
+        padding-top: 1em;  
+        padding-left: 1em;
+    }
+    #page {
+        background-color: white;
+        border-left: 1px solid rgb(100,200,100);
+        padding-bottom: 2em;
+    }
+
+    #navi2>div {
+        line-height: 1.5em;
+    }
+    #navi1>div:hover, #navi2>div:hover {
+        color: silver;
+    } 
+
+
 code {
     display: inline-block;
-    width: 100%;
+    font-family: monospace;
+    width: 95%;
     background-color: rgb(220,220,220);
     padding: 5px;
 }
+#footer  {
+    padding: 1em;
+    font-size: 0.8em;
+}
+#footer a {
+    color: #bfe29e;
+}
+/* /Element styling */

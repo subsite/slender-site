@@ -11,6 +11,7 @@ export class LoaderService {
     private navi: any;
     private parent: any;
     private child: any;
+    private pageHeader: any = '';
 
     constructor(
         private http: Http, 
@@ -22,21 +23,27 @@ export class LoaderService {
         }
 
     getPageUrl() {
+        var defaultUrl = CONF.pageroot + '/' + this.parent.page + '/' + this.child.page + '.md'; 
 
         // Return custom url if found
         var returnUrl = (this.child.custom_url) 
             ? this.child.custom_url 
-            : CONF.pageroot + '/' + this.parent.page + '/' + this.child.page + '.md'; 
+            : defaultUrl
+
+        // Get optional page header for overriden urls. Maybe move this to own method.
+        if (this.child.custom_url && this.child.page_as_header) {
+            this.getFile(defaultUrl)
+                .subscribe(data => this.pageHeader = this.markUp(data))
+        }
 
         return returnUrl;
-
     }
-
+    
     // Get markdownfile with http request
     getFile(httpUrl:string) {
         
         return this.http.get(httpUrl)
-            .map(res => res.text()) 
+            .map(res => this.pageHeader + res.text()) 
             .catch(this.handleError);
             
     }
