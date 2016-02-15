@@ -19,17 +19,21 @@ This is really just a testbead for Angular2, but it is currently in production h
 
 ## ToDo
 
-- Code restructuring, probably
-- Make navigational depth unlimited
+- Make navigational depth unlimited. The angular2-router is apparently still under heavy development, so we'll leave it alone for the moment.
 - Swap ot marked.js to Angular2 library when available
-- Use upcoming new features of Angular2
+- Use other upcoming new features of Angular2
+
+## Found a bug? Want to comment?
+
+Use the issute tracker of this repository to file found bugs, opinions. Feel free to fork and pull-request! Angular2 is still beta, and thus lacking in documentation and prone to change. Some of this code - and coding style - might become obsolete as angular2 developes further. We'll be glad to hear your comments concerning this also!
 
 ## Installation
 
-Clone the repository, then:
-
-    npm install
-    npm start 
+Clone the repository and compile the source:
+    
+    git clone https://github.com/subsite/slender-site.git
+    cd slender-site/
+    npm install && npm start 
 
 
 ## Local configuration
@@ -39,7 +43,7 @@ Clone the repository, then:
  3. Edit or replace *app/app.html* and everything in assets 
  4. If you plan to use git to fetch updates, edit .gitignore to ignore itself and everything you want to keep. No guarantees an upgrade won't break you site anyway...
 
-HINT: Visual Studio Code is good for editing angular2, it also has real-time markdown preview.
+HINT: Visual Studio Code is good for editing angular2, it also features real-time markdown preview.
 
 
 ## Directory structure
