@@ -15,7 +15,7 @@ SlenderSite is a simple Angular2 website system for no-nonsense sites with nothi
 
 **Why?**
 
-This is really a just testbead for Angular2, but it is currently in production here: http://www.subsite.fi/in-english
+This is really just a testbead for Angular2, but it is currently in production here: http://www.subsite.fi/in-english
 
 ## ToDo
 
@@ -30,7 +30,6 @@ Clone the repository, then:
 
     npm install
     npm start 
-
 
 
 ## Local configuration
