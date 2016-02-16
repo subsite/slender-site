@@ -3,7 +3,7 @@
     <div *ngFor="#item of navi; #i = index" 
         (click)="onNavi(0, i)" 
         [class.is-active]="i == curNaviIdx[0]">
-        {{item.name}}
+        <a href="/#/{{item.page}}/{{item.sub[0].page}}">{{item.name}}</a>
     </div>
 
 </div>
@@ -14,7 +14,7 @@
             (click)="onNavi(1, i)" 
             [class.is-active]="i == curNaviIdx[1]">
 
-            {{item.name}}
+            <a href="/#/{{navi[curNaviIdx[0]].page}}/{{item.page}}">{{item.name}}</a>
         </div>
     </div>
     <div id="page">

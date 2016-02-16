@@ -18,7 +18,6 @@ export class NaviService {
         if (navLevel == 0 && navIdx != this.curNaviIdx[0]) {
             this.curNaviIdx[1] = 0;
         }
-    
         // curNaviIdx[0] = first level array index, curNaviIdx[1] = second level.
         this.curNaviIdx[navLevel] = navIdx;
     }
