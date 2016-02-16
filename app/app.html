@@ -1,22 +1,13 @@
 <div id="banner">SlenderSite demo</div>
-<div id="navi1">
-    <div *ngFor="#item of navi; #i = index" 
-        (click)="onNavi(0, i)" 
-        [class.is-active]="i == curNaviIdx[0]">
-        <a href="{{linkRoot}}#/{{item.page}}/{{item.sub[0].page}}">{{item.name}}</a>
-    </div>
 
-</div>
+<ss-navi-top></ss-navi-top>
+
 
 <div id="main">
-    <div id="navi2">
-        <div *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" 
-            (click)="onNavi(1, i)" 
-            [class.is-active]="i == curNaviIdx[1]">
-
-            <a href="{{linkRoot}}#/{{navi[curNaviIdx[0]].page}}/{{item.page}}">{{item.name}}</a>
-        </div>
-    </div>
+    
+        <ss-navi-left></ss-navi-left>
+        
+    
     <div id="page">
         <router-outlet></router-outlet>
     </div>

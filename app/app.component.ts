@@ -11,12 +11,19 @@ import {
 import {HTTP_PROVIDERS} from 'angular2/http';
 import {LoaderComponent} from './loader/loader.component';
 import {NaviService} from './navi/navi.service';
+import {NaviTopComponent} from './navi/navi-top.component';
+import {NaviLeftComponent} from './navi/navi-left.component';
+
 import {CONF} from './conf';
 
 @Component({
     selector: 'ss-app',
     templateUrl: './app/app.html',
-    directives: [ROUTER_DIRECTIVES],
+    directives: [
+        ROUTER_DIRECTIVES,
+        NaviTopComponent,
+        NaviLeftComponent
+    ],
     providers: [
         NaviService,
         HTTP_PROVIDERS,
@@ -60,13 +67,15 @@ export class AppComponent {
         var nav1 = (path[1]) ? this.navi.map(function(e) { return e.page; }).indexOf(path[1]) : 0;
         var nav2 = (path[2]) ? this.navi[nav1].sub.map(function(e) { return e.page; }).indexOf(path[2]) : 0;
         // Run initial navi based on possible hashpath
-        this.onNavi(0,nav1);
-        this.onNavi(1,nav2);
+        this.naviService.onNavi(0,nav1);
+        this.naviService.onNavi(1,nav2);
     }
     
+    /*
     // Run when user clicks navi link
     onNavi(level:number, idx:number) {
         // Run navi service tasks, get curNaviIdx
         this.curNaviIdx = this.naviService.onNavi(level, idx);
     }
+    */
 }
