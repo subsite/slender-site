@@ -7,14 +7,11 @@ import {NaviService} from './navi.service';
         <div *ngFor="#item of navi; #i = index" 
             (click)="onNavi(0, i)" 
             [class.is-active]="i == curNaviIdx[0]">
+            
             <a href="{{linkRoot}}#/{{item.page}}/{{item.sub[0].page}}">{{item.name}}</a>
         </div>
     `
 })
 
-export class NaviTopComponent extends NaviService {
-    constructor() {
-        super();
-    }
-}
+export class NaviTopComponent extends NaviService { }
 

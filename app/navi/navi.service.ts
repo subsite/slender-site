@@ -4,10 +4,12 @@ import {CONF} from '../conf';
 @Injectable()
 export class NaviService {
     
+    // Array with navigation structure
     navi: any = [];
     // Default navi index first child of first parent
     curNaviIdx: number[] = [0,0];
     linkRoot: string;
+    
     constructor() {
         // Get navi from conf
         this.navi = CONF.navi;

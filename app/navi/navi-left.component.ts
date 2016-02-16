@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {NaviService} from './navi.service';
 
 @Component({
+    selector: 'ss-navi-left',
     template: `
         <div *ngFor="#item of navi[curNaviIdx[0]].sub; #i = index" 
             (click)="onNavi(1, i)" 
@@ -9,8 +10,7 @@ import {NaviService} from './navi.service';
 
             <a href="{{linkRoot}}#/{{navi[curNaviIdx[0]].page}}/{{item.page}}">{{item.name}}</a>
         </div>
-    `,
-    selector: 'ss-navi-left'
+    `
 })
 
 export class NaviLeftComponent {
@@ -27,7 +27,7 @@ export class NaviLeftComponent {
         this.curNaviIdx = this.naviService.curNaviIdx;
     }
     onNavi(level: number, idx: number) {
-        // Run navi service tasks, get curNaviIdx
+        
         this.curNaviIdx = this.naviService.onNavi(level, idx);
     }
 }
