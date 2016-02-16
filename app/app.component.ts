@@ -22,7 +22,7 @@ import {CONF} from './conf';
         HTTP_PROVIDERS,
         ROUTER_PROVIDERS,
         provide(LocationStrategy, {useClass: HashLocationStrategy}), // Use hash for now, direct access produces 404 with non-hashbang paths
-        provide(APP_BASE_HREF, {useValue : CONF.siteroot})  // replaces router base <base href="/"> 
+        provide(APP_BASE_HREF, {useValue : '/'})  // replaces router base <base href="/"> 
             
     ]
 })
@@ -47,7 +47,8 @@ export class AppComponent {
         
         // Get navi menu from service
         this.navi = this.naviService.navi;
-        this.linkRoot  = CONF.siteroot;
+        // Create root path for navi links
+        this.linkRoot  = (CONF.siteroot + '/').replace(/(\/+)/g, '/');
         
         this.initByUrl();
     }

@@ -1,6 +1,6 @@
 export var CONF: any = {
     
-    siteroot: '/', // Web url root path, eg "/mysite", also router base
+    siteroot: '/', // Web url root path, eg "/mysite"
     
     pageroot: '/content/pages', // Root url for markdown pages, relative from siteroot
     
