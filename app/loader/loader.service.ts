@@ -23,6 +23,7 @@ export class LoaderService {
         }
 
     getPageUrl() {
+               
         var defaultUrl = CONF.pageroot + '/' + this.parent.page + '/' + this.child.page + '.md'; 
 
         // Return custom url if found

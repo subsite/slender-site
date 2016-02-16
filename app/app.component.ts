@@ -25,6 +25,8 @@ import {NaviService} from './navi/navi.service';
 })
 
 @RouteConfig([
+    { path: '/', name: 'Loader', component: LoaderComponent },
+    { path: '/:page1', name: 'Loader', component: LoaderComponent },
     { path: '/:page1/:page2', name: 'Loader', component: LoaderComponent }
 ])
 
@@ -42,8 +44,11 @@ export class AppComponent {
         // Get navi menu from service
         this.navi = this.naviService.navi;
         
+        this.initByUrl();
+    }
+    
+    initByUrl() {
         // In case subpage path is requested directly
-        
         var path = window.location.hash.split('/');
         // Find navi array index by page name
         var nav1 = (path[1]) ? this.navi.map(function(e) { return e.page; }).indexOf(path[1]) : 0;
@@ -55,9 +60,7 @@ export class AppComponent {
     
     // Run when user clicks navi link
     onNavi(level:number, idx:number) {
-        // Run navi service tasks
-        this.naviService.onNavi(level, idx);
-        // Set current navi index
-        this.curNaviIdx = this.naviService.curNaviIdx;
+        // Run navi service tasks, get curNaviIdx
+        this.curNaviIdx = this.naviService.onNavi(level, idx);
     }
 }
