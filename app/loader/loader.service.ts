@@ -24,7 +24,9 @@ export class LoaderService {
 
     getPageUrl() {
                
-        var defaultUrl = CONF.pageroot + '/' + this.parent.page + '/' + this.child.page + '.md'; 
+        var defaultUrl = '/' + CONF.siteroot + '/' + CONF.pageroot + '/' + this.parent.page + '/' + this.child.page + '.md'; 
+        // remove possible extra slashes
+        defaultUrl = defaultUrl.replace(/(\/+)/g, '/');
 
         // Return custom url if found
         var returnUrl = (this.child.custom_url) 

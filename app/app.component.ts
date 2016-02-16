@@ -5,11 +5,13 @@ import {
     RouteConfig, 
     ROUTER_DIRECTIVES, 
     ROUTER_PROVIDERS, 
+    APP_BASE_HREF,
     LocationStrategy, 
     HashLocationStrategy} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
 import {LoaderComponent} from './loader/loader.component';
 import {NaviService} from './navi/navi.service';
+import {CONF} from './conf';
 
 @Component({
     selector: 'ss-app',
@@ -19,8 +21,9 @@ import {NaviService} from './navi/navi.service';
         NaviService,
         HTTP_PROVIDERS,
         ROUTER_PROVIDERS,
-        provide(LocationStrategy, {useClass: HashLocationStrategy}) 
-            // Use hash for now, direct access produces 404 with non-hashbang paths
+        provide(LocationStrategy, {useClass: HashLocationStrategy}), // Use hash for now, direct access produces 404 with non-hashbang paths
+        provide(APP_BASE_HREF, {useValue : CONF.siteroot})  // replaces router base <base href="/"> 
+            
     ]
 })
 
@@ -33,6 +36,7 @@ import {NaviService} from './navi/navi.service';
 export class AppComponent {
     
     private navi: any;
+    private linkRoot: string;
     private curNaviIdx: number[];
     
     constructor(
@@ -43,6 +47,7 @@ export class AppComponent {
         
         // Get navi menu from service
         this.navi = this.naviService.navi;
+        this.linkRoot  = CONF.siteroot;
         
         this.initByUrl();
     }
