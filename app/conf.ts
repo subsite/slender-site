@@ -10,7 +10,7 @@ export var CONF: any = {
                 {
                     page: "about", // First = default page
                     name: "About",
-                    custom_url: "/readme.md" // Overriding url (full url with extension)
+                    custom_url: "/README.md" // Overriding url (full url with extension)
                 },
                 {
                     page: "angular2", // First = default page
