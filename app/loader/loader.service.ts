@@ -18,20 +18,24 @@ export class LoaderService {
         private naviService: NaviService) { 
             
             this.navi = CONF.navi;
-            this.parent = this.navi[this.naviService.curNaviIdx[0]];
-            this.child = this.parent.sub[this.naviService.curNaviIdx[1]];
+            
         }
 
     getPageUrl() {
+       
+        this.parent = this.navi[this.naviService.curNaviIdx[0]];
+        this.child = this.parent.sub[this.naviService.curNaviIdx[1]];
                
         var defaultUrl = '/' + CONF.siteroot + '/' + CONF.pageroot + '/' + this.parent.page + '/' + this.child.page + '.md'; 
         // remove possible extra slashes
         defaultUrl = defaultUrl.replace(/(\/+)/g, '/');
-
+        
         // Return custom url if found
         var returnUrl = (this.child.custom_url) 
             ? this.child.custom_url 
             : defaultUrl
+
+            console.log("getPageUrl( parent / child: "+ this.parent.page + '/' + this.child.page +") naviService: "+ this.naviService.i);
 
         // Get optional page header for overriden urls. Maybe move this to own method.
         if (this.child.custom_url && this.child.page_as_header) {
@@ -44,7 +48,7 @@ export class LoaderService {
     
     // Get markdownfile with http request
     getFile(httpUrl:string) {
-        
+        console.log("getFile("+httpUrl+")");
         return this.http.get(httpUrl)
             .map(res => this.pageHeader + res.text()) 
             .catch(this.handleError);
