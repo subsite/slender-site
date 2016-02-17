@@ -8,7 +8,7 @@ import {NaviService} from './navi.service';
             (click)="onNavi(0, i)" 
             [class.is-active]="i == curNaviIdx[0]"> 
             
-                <a href="/#/{{item.page}}/{{item.sub[0].page}}">{{item.name}}</a>
+            <a href="{{linkRoot}}#/{{item.page}}/{{item.sub[0].page}}">{{item.name}}</a>
         </div>
     `
 })
