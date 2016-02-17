@@ -14,17 +14,17 @@ import {NaviService} from './navi.service';
 })
 
 export class NaviLeftComponent {
-    private navi: any;
-    private linkRoot: string;
+    private navi: any[];
     private curNaviIdx: number[];
+    private linkRoot: string;
 
     constructor(private naviService: NaviService) { }
 
     ngOnInit() {
 
         this.navi = this.naviService.navi;
-        this.linkRoot = this.naviService.linkRoot;
         this.curNaviIdx = this.naviService.curNaviIdx;
+        this.linkRoot  = this.naviService.linkRoot;
     }
     onNavi(level: number, idx: number) {
         
