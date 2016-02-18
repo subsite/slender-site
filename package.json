@@ -10,7 +10,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/subsite/togglish"
+    "url": "https://github.com/subsite/slender-site/"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.6",
