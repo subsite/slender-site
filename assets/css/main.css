@@ -16,7 +16,7 @@ body {
 
 
 /* Layout alignmment */
-ss-navi, ss-navi-sub {
+ss-navi, ss-navi-sub, ss-footer {
      display: inline-block;
      float: left;
 }
@@ -138,11 +138,11 @@ code {
     background-color: rgb(220,220,220);
     padding: 5px;
 }
-#footer  {
+ss-footer {
     padding: 1em;
     font-size: 0.8em;
 }
-#footer a {
+ss-footer a {
     color: #bfe29e;
 }
 /* /Element styling */
