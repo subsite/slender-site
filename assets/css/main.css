@@ -16,12 +16,12 @@ body {
 
 
 /* Layout alignmment */
-ss-navi-top, ss-navi-left {
+ss-navi, ss-navi-sub {
      display: inline-block;
      float: left;
 }
 
-ss-navi-top {
+ss-navi {
     width: 100%;
 }
 ss-app>div {
@@ -36,7 +36,7 @@ ss-app>div {
 #main {
     width: 100%;
 }
-    ss-navi-left {
+    ss-navi-sub {
         float: left;
         width: 20%;
         height: 100%;
@@ -55,18 +55,18 @@ ss-app>div {
 
 /* link styling */
 
-ss-navi-top a, ss-navi-top a:active, ss-navi-top a:visited {
+ss-navi a, ss-navi a:active, ss-navi a:visited {
     color: white;
     text-decoration: none;
 }
-ss-navi-left a, ss-navi-left a:active, ss-navi-left a:visited {
+ss-navi-sub a, ss-navi-sub a:active, ss-navi-sub a:visited {
     color: rgb(30,50,30);
     text-decoration: none;
 }
-ss-navi-top>div:hover a, ss-navi-left>div:hover a {
+ss-navi>div:hover a, ss-navi-sub>div:hover a {
     opacity: 0.7;
 } 
-ss-navi-top .is-active, ss-navi-left .is-active { /* active navi element */
+ss-navi .is-active, ss-navi-sub .is-active { /* active navi element */
     font-weight: bold;
 }
 /* /link styling */
@@ -84,7 +84,7 @@ ss-navi-top .is-active, ss-navi-left .is-active { /* active navi element */
     background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
-ss-navi-top {   
+ss-navi {   
     border-top: 1px solid white;
     border-bottom: 1px solid rgb(0,150,0);
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3dff5a+0,57c93e+100 */
@@ -95,10 +95,10 @@ ss-navi-top {
     gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 }
-ss-navi-top>div, ss-navi-left>div {
+ss-navi>div, ss-navi-sub>div {
     cursor: pointer;
 }
-ss-navi-top>div {
+ss-navi>div {
     float: left;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -116,7 +116,7 @@ background: -moz-linear-gradient(-45deg, #bfe29e 0%, #ffffff 100%); /* FF3.6-15 
 background: -webkit-linear-gradient(-45deg, #bfe29e 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #bfe29e 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-    ss-navi-left, #page {
+    ss-navi-sub, #page {
         color: rgb(50,50,50);
         padding-top: 1em;  
         padding-left: 1em;
@@ -127,7 +127,7 @@ background: linear-gradient(135deg, #bfe29e 0%,#ffffff 100%); /* W3C, IE10+, FF1
         padding-bottom: 2em;
     }
 
-    ss-navi-left>div {
+    ss-navi-sub>div {
         line-height: 1.5em;
     }
 

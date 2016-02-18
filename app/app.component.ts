@@ -1,5 +1,4 @@
-import {Component} from 'angular2/core';
-import {provide} from 'angular2/core';
+import {Component, provide, OnInit} from 'angular2/core';
 import {
     Router, 
     RouteConfig, 
@@ -11,8 +10,8 @@ import {
 import {HTTP_PROVIDERS} from 'angular2/http';
 import {LoaderComponent} from './loader/loader.component';
 import {NaviService} from './navi/navi.service';
-import {NaviTopComponent} from './navi/navi-top.component';
-import {NaviLeftComponent} from './navi/navi-left.component';
+import {NaviComponent} from './navi/navi.component';
+import {NaviSubComponent} from './navi/navi-sub.component';
 
 import {CONF} from './conf';
 
@@ -21,8 +20,8 @@ import {CONF} from './conf';
     templateUrl: './app/app.html',
     directives: [
         ROUTER_DIRECTIVES,
-        NaviTopComponent,
-        NaviLeftComponent
+        NaviComponent,
+        NaviSubComponent
     ],
     providers: [
         NaviService,
