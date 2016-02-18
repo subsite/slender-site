@@ -12,6 +12,7 @@ import {LoaderComponent} from './loader/loader.component';
 import {NaviService} from './navi/navi.service';
 import {NaviComponent} from './navi/navi.component';
 import {NaviSubComponent} from './navi/navi-sub.component';
+import {FooterComponent} from './footer/footer.component';
 
 import {CONF} from './conf';
 
@@ -21,7 +22,8 @@ import {CONF} from './conf';
     directives: [
         ROUTER_DIRECTIVES,
         NaviComponent,
-        NaviSubComponent
+        NaviSubComponent,
+        FooterComponent
     ],
     providers: [
         NaviService,

@@ -1,6 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
 import {NaviService} from './navi.service';
-import {NaviLeftComponent} from './navi-left.component';
 
 @Component({
     selector: 'ss-navi',
