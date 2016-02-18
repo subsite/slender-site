@@ -40,41 +40,11 @@ import {CONF} from './conf';
 ])
 
 export class AppComponent {
-    
-    private navi: any;
-    private linkRoot: string;
-    private curNaviIdx: number[];
-    
-    constructor(
-           private naviService: NaviService,
-           private router: Router) { }
+
+    constructor(private naviService: NaviService) { }
 
     ngOnInit() {
-        
-        // Get navi menu from service
-        this.navi = this.naviService.navi;
-        // Create root path for navi links
-        this.linkRoot  = (CONF.siteroot + '/').replace(/(\/+)/g, '/');
-        
-        this.initByUrl();
+        this.naviService.naviByUrl();
     }
-    
-    initByUrl() {
-        // In case subpage path is requested directly
-        var path = window.location.hash.split('/');
-        // Find navi array index by page name
-        var nav1 = (path[1]) ? this.navi.map(function(e) { return e.page; }).indexOf(path[1]) : 0;
-        var nav2 = (path[2]) ? this.navi[nav1].sub.map(function(e) { return e.page; }).indexOf(path[2]) : 0;
-        // Run initial navi based on possible hashpath
-        this.naviService.onNavi(0,nav1);
-        this.naviService.onNavi(1,nav2);
-    }
-    
-    /*
-    // Run when user clicks navi link
-    onNavi(level:number, idx:number) {
-        // Run navi service tasks, get curNaviIdx
-        this.curNaviIdx = this.naviService.onNavi(level, idx);
-    }
-    */
+  
 }
