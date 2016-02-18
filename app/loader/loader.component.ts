@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {RouteParams, Router} from 'angular2/router';
 import {LoaderService} from './loader.service';
 import {CONF} from '../conf';
@@ -9,7 +9,7 @@ import {CONF} from '../conf';
     providers: [LoaderService]
 })
 
-export class LoaderComponent {
+export class LoaderComponent implements OnInit {
 
     mdUrl: string;
     parsedMd: string = '';
