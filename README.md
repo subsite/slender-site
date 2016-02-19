@@ -8,7 +8,7 @@ SlenderSite is a simple Angular2 website system for no-nonsense sites with nothi
 - GitHub repository: https://github.com/subsite/slender-site/
 
 **Features**
-- Very short source code
+- Small source code
 - Two level navigational hierarchy
 - Markdown parsing using *marked.js*
 - Sample css 
@@ -50,12 +50,16 @@ HINT: Visual Studio Code is good for editing angular2, it also features real-tim
 
 ```
 ├── app
+│   ├── footer 
+│   │   ├── footer.component.ts
 │   ├── loader 
 │   │   ├── loader.html 
 │   │   ├── loader.component.ts
 │   │   └── loader.service.ts
 │   ├── navi 
-│   │   └── navi-service.ts
+│   │   ├── navi.component.ts
+│   │   ├── navi-sub.component.ts
+│   │   └── navi.service.ts
 │   ├── app.html
 │   ├── app.component.ts
 │   ├── conf.ts 
