@@ -2,6 +2,6 @@
 
 Included image
 
-![alt text](content/img/ng2-logo.png)
+![alt text](/content/img/ng2-logo.png)
 
 *Image borrowed from http://blog.ninja-squad.com/ *
