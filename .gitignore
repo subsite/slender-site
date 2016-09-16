@@ -12,5 +12,6 @@ WEB-INF
 # For TypeScript projects like Angular2
 app/**/*.js
 app/**/*.map
+!app/build-conf/*
 typings
 
