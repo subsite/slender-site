@@ -7,7 +7,7 @@ export var CONF: any = {
     navi: [             // Navigation tree
         {
             page: "about", // First = default folder
-            name: "About2",
+            name: "About",
             sub: [
                 {
                     page: "about", // First = default page
@@ -24,7 +24,7 @@ export var CONF: any = {
         },
         {
             page: "foobar", 
-            name: "Example pages2",
+            name: "Example pages",
             sub: [
                 {
                     page: "foo", 
