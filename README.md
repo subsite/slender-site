@@ -49,30 +49,42 @@ HINT: Visual Studio Code is good for editing angular2, it also features real-tim
 ## Directory structure
 
 ```
-├── app
+├── app # submodule repository https://github.com/subsite/slender-app
+│   ├── build-conf 
+│   │   └── package.json etc...
 │   ├── footer 
 │   │   ├── footer.component.ts
 │   ├── loader 
-│   │   ├── loader.html 
 │   │   ├── loader.component.ts
 │   │   └── loader.service.ts
 │   ├── navi 
 │   │   ├── navi.component.ts
 │   │   ├── navi-sub.component.ts
 │   │   └── navi.service.ts
-│   ├── app.html
 │   ├── app.component.ts
-│   ├── conf.ts 
 │   └── main.ts
-├── assets
-│   ├── css
-│   └── img
-├── content
-│   ├── img
-│   └── pages
+│
+│ # repository https://github.com/subsite/slender-site  
+├── local 
+│   ├── assets
+│   │   ├── css
+│   │   ├── img
+│   ├── content
+│   │   ├── img
+│   │   ├── pages
+│   ├── templates
+│   │   ├── app.template.html
+│   │   ├── footer.template.html
+│   │   ├── navi.template.html
+│   │   └── navi-sub.template.html
+│   └── conf.ts
+│ 
 ├── index.html
 ├── package.json
-├── readme.md
+├── systemjs.config.js
+├── tsconfig.json
+├── typings.json
+├── README.md
 └── .gitignore
 ```
    

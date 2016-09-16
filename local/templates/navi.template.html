@@ -1,0 +1,4 @@
+<div *ngFor="let item of getNavi(); let i = index">
+
+    <a routerLink="/{{item.page}}/{{item.sub[0].page}}" routerLinkActive="is-active">{{item.name}}</a>
+</div>

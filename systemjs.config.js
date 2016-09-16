@@ -26,7 +26,8 @@
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
 
       // Slender Site
-      'slender-site': 'slender-site.config.js'
+      'slender-site': 'slender-site.config.js',
+      'local': 'local'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -35,6 +36,9 @@
         defaultExtension: 'js'
       },
       rxjs: {
+        defaultExtension: 'js'
+      },
+      local: {
         defaultExtension: 'js'
       },
       'angular2-in-memory-web-api': {
