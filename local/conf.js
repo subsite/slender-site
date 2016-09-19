@@ -6,8 +6,6 @@ System.register([], function(exports_1, context_1) {
         setters:[],
         execute: function() {
             exports_1("CONF", CONF = {
-                siteroot: '/',
-                pageroot: '/content/pages',
                 navi: [
                     {
                         page: "about",
@@ -16,7 +14,7 @@ System.register([], function(exports_1, context_1) {
                             {
                                 page: "about",
                                 name: "About",
-                                custom_url: "/README.md" // Overriding url (full url with extension)
+                                custom_url: "README.md" // Overriding url (full url with extension)
                             },
                             {
                                 page: "angular2",
