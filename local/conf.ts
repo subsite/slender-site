@@ -1,4 +1,6 @@
 export var CONF: any = {
+
+    pageTitle: "SlenderSite", // index.html title-tag
     
     navi: [             // Navigation tree
         {
