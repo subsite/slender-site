@@ -12,6 +12,8 @@ WEB-INF
 # For TypeScript projects like Angular2
 app/**/*.js
 app/**/*.map
+local/**/*.js
+local/**/*.map
 !app/build-conf/*
 typings
 slender-site.config.js

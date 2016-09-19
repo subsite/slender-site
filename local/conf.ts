@@ -13,7 +13,7 @@ export var CONF: any = {
                 {
                     page: "angular2", // First = default page
                     name: "Angular2",
-                    custom_url: "http://raw.githubusercontent.com/angular/angular/master/README.md",
+                    custom_url: "//raw.githubusercontent.com/angular/angular/master/README.md",
                     page_as_header: true // show markdown page from tree before custom_url content
                 }
             ]
