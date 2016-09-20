@@ -32,14 +32,32 @@ This framework *"should"* work, but I offer no guarantees. Don't use on a produc
 
 Use the issue tracker of this repository to file found bugs, opinions. Feel free to fork and pull-request! This is a side project for me, so I can't guarantee bugs will be fixed very fast or at all... I'll try, though. 
 
-## Installation
+## Installation (local)
 
 Clone the repository and compile the source. Remember --recursive flag to get submodule.
     
     git clone --recursive https://github.com/subsite/slender-site.git
     cd slender-site/
     npm install 
-    npm start 
+    npm start # starts the node lite-server and open the page in your default browser.
+
+## Installation (Apache)
+
+Clone and install as above. Instead of `npm start` you might run `npm run tsc`. For the non-hasbang urls to work, you need to rewrite everything to base. Put a *.htaccess* in you page root:
+```
+<IfModule mod_rewrite.c>
+  Options Indexes FollowSymLinks
+  RewriteEngine On
+  RewriteBase / # This should be the same as <base href> in index.html
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+```
+    
+    
+
 
 ## Local configuration and content
 
