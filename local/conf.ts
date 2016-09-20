@@ -1,6 +1,10 @@
 export var CONF: any = {
 
     pageTitle: "SlenderSite", // index.html title-tag
+
+    // Set gaTrackingId = 'UA-XXXXXXX-X' to enable Google Analytics 
+    // Tracking is disabled on localhost
+    gaTrackingId: false, 
     
     navi: [             // Navigation tree
         {
