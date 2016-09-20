@@ -22,7 +22,7 @@
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       
       // other libraries
-      'rxjs':                       'npm:rxjs',
+      // BUNDLED 'rxjs':                       'npm:rxjs',
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
 
       // Slender Site
@@ -35,9 +35,10 @@
         main: './main.js',
         defaultExtension: 'js'
       },
+      /* BUNDLED
       rxjs: {
         defaultExtension: 'js'
-      },
+      }, */
       local: {
         defaultExtension: 'js'
       },
