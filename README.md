@@ -12,6 +12,7 @@ SlenderSite is a simple Angular2 website framework for no-nonsense sites with no
 - Two level navigational hierarchy
 - Markdown parsing using *marked.js*
 - Sample css 
+- Google Analytics tracking
 
 **Why?**
 
@@ -56,8 +57,6 @@ Clone and install as above. Instead of `npm start` you might run `npm run tsc`. 
 </IfModule>
 ```
     
-    
-
 
 ## Local configuration and content
 
@@ -89,6 +88,7 @@ New features and vendor code upgrades will be commited to app submodule. In orde
     npm install
     npm start
 
+If you get weird errors, deleting *node_modules* and running `npm install` again might help.
 
 
 ## Directory structure
