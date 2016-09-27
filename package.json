@@ -2,7 +2,7 @@
     "name": "SubSite",
     "version": "1.2.0",
     "scripts": {
-        "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+        "start": "concurrently \"npm run tsc:w\" \"npm run lite\" \"npm run watch-css\" ",
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "lite": "lite-server",
