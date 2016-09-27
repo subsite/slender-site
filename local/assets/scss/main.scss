@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(50,50,50);
+    color: white;
+}
+#loading {
+    /* Loader from http://www.ajaxload.info/ */
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url("../img/loader.gif") center center no-repeat;
+    
+}
+
+
+
+/* Layout alignmment */
+ss-navi, ss-navi-sub, ss-footer {
+     display: inline-block;
+     float: left;
+}
+
+ss-navi {
+    width: 100%;
+}
+ss-app>div {
+  float: left;
+}
+#banner {
+    width: 100%;
+    height: 20vh;
+}
+
+
+#main {
+    width: 100%;
+}
+    ss-navi-sub {
+        float: left;
+        width: 20%;
+        height: 100%;
+        
+    }
+    #page {
+        float: right;
+        width: 70%;
+        min-height: 55vh;
+    }
+#footer {
+   width: 90%
+}
+
+/* /Layout alignmment */
+
+/* link styling */
+
+ss-navi a, ss-navi a:active, ss-navi a:visited {
+    color: white;
+    text-decoration: none;
+}
+ss-navi-sub a, ss-navi-sub a:active, ss-navi-sub a:visited {
+    color: rgb(30,50,30);
+    text-decoration: none;
+}
+ss-navi>div:hover a, ss-navi-sub>div:hover a {
+    opacity: 0.7;
+} 
+ss-navi .is-active, ss-navi-sub .is-active { /* active navi element */
+    font-weight: bold;
+}
+/* /link styling */
+
+/* Element styling */
+#banner {
+    font-size: 3em; 
+    padding-top: 5vh;
+    color: white;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: #7d7e7d; /* Old browsers */
+    background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+ss-navi {   
+    border-top: 1px solid white;
+    border-bottom: 1px solid rgb(0,150,0);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3dff5a+0,57c93e+100 */
+    background: #3dff5a; /* Old browsers */
+    background: -moz-linear-gradient(top, #3dff5a 0%, #57c93e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3dff5a 0%,#57c93e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-
+    gradient(to bottom, #3dff5a 0%,#57c93e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+ss-navi>div, ss-navi-sub>div {
+    cursor: pointer;
+}
+ss-navi>div {
+    float: left;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.2em;
+    border-right: 1px solid #57c93e;
+}
+
+
+#main {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfe29e+0,ffffff+100 */
+background: #bfe29e; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #bfe29e 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #bfe29e 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #bfe29e 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+    ss-navi-sub, #page {
+        color: rgb(50,50,50);
+        padding-top: 1em;  
+        padding-left: 1em;
+    }
+    #page {
+        background-color: white;
+        border-left: 1px solid rgb(100,200,100);
+        padding-bottom: 2em;
+    }
+
+    ss-navi-sub>div {
+        line-height: 1.5em;
+    }
+
+code {
+    display: inline-block;
+    font-family: monospace;
+    width: 95%;
+    background-color: rgb(220,220,220);
+    padding: 5px;
+}
+ss-footer {
+    padding: 1em;
+    font-size: 0.8em;
+}
+ss-footer a {
+    color: #bfe29e;
+}
+/* /Element styling */

@@ -20,7 +20,7 @@
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
-      
+
       // other libraries
       // BUNDLED 'rxjs':                       'npm:rxjs',
       'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
@@ -48,4 +48,22 @@
       }
     }
   });
+
 })(this);
+
+//Cache Busting
+var systemLocate = System.locate;
+d = new Date(); 
+var cacheBustStr = d.getDay();
+System.locate = function (load) {
+  var System = this; // its good to ensure exact instance-binding
+  return Promise.resolve(systemLocate.call(this, load)).then(function (address) {
+
+    if (address.endsWith('.html.js')) {
+      //This feels a little hacky, not sure how to allow html files in the main config.
+      address = address.slice(0, -3);
+    }
+
+    return address + '?cacheBust=' + cacheBustStr;
+  });
+}
